@@ -1,0 +1,94 @@
+{
+  "employees": [
+    {
+      "empId": "E001",
+      "name": "Amit Sharma",
+      "dateOfJoining": "2018-06-15",
+      "education": "B.Tech",
+      "currentSalary": 850000,
+      "baseLocation": "Bangalore",
+      "designation": "Senior Software Engineer"
+    },
+    {
+      "empId": "E002",
+      "name": "Priya Verma",
+      "dateOfJoining": "2019-09-10",
+      "education": "MCA",
+      "currentSalary": 780000,
+      "baseLocation": "Pune",
+      "designation": "Software Engineer"
+    },
+    {
+      "empId": "E003",
+      "name": "Rahul Mehta",
+      "dateOfJoining": "2017-01-20",
+      "education": "B.Sc IT",
+      "currentSalary": 920000,
+      "baseLocation": "Mumbai",
+      "designation": "Technical Lead"
+    },
+    {
+      "empId": "E004",
+      "name": "Sneha Iyer",
+      "dateOfJoining": "2020-11-05",
+      "education": "B.E",
+      "currentSalary": 650000,
+      "baseLocation": "Chennai",
+      "designation": "Associate Developer"
+    },
+    {
+      "empId": "E005",
+      "name": "Vikram Singh",
+      "dateOfJoining": "2016-04-12",
+      "education": "M.Tech",
+      "currentSalary": 1200000,
+      "baseLocation": "Hyderabad",
+      "designation": "Solution Architect"
+    },
+    {
+      "empId": "E006",
+      "name": "Neha Gupta",
+      "dateOfJoining": "2021-07-01",
+      "education": "BCA",
+      "currentSalary": 520000,
+      "baseLocation": "Noida",
+      "designation": "Junior Software Engineer"
+    },
+    {
+      "empId": "E007",
+      "name": "Arjun Patel",
+      "dateOfJoining": "2018-02-18",
+      "education": "MBA (IT)",
+      "currentSalary": 980000,
+      "baseLocation": "Ahmedabad",
+      "designation": "IT Project Manager"
+    },
+    {
+      "empId": "E008",
+      "name": "Kavya Nair",
+      "dateOfJoining": "2019-12-09",
+      "education": "B.Tech",
+      "currentSalary": 700000,
+      "baseLocation": "Kochi",
+      "designation": "UI/UX Developer"
+    },
+    {
+      "empId": "E009",
+      "name": "Rohit Kumar",
+      "dateOfJoining": "2015-08-25",
+      "education": "B.E",
+      "currentSalary": 1100000,
+      "baseLocation": "Gurgaon",
+      "designation": "Engineering Manager"
+    },
+    {
+      "empId": "E010",
+      "name": "Anjali Deshmukh",
+      "dateOfJoining": "2022-03-14",
+      "education": "M.Sc Computer Science",
+      "currentSalary": 600000,
+      "baseLocation": "Nagpur",
+      "designation": "Data Analyst"
+    }
+  ]
+}

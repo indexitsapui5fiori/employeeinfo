@@ -1,0 +1,51 @@
+<mvc:View controllerName="com.employeeinfo.controller.EmployeeTable"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+     <Table
+        id="empTable"
+        items="{/employees}"
+        inset="false">
+
+        <columns>
+            <Column><Text text="Employee Name"/></Column>
+            <Column><Text text="Designation"/></Column>
+            <Column><Text text="Date of Joining"/></Column>
+            <Column><Text text="Salary"/></Column>
+            <Column><Text text="Location"/></Column>
+            <Column><Text text="Experience Level"/></Column>
+        </columns>
+
+        <items>
+            <ColumnListItem>
+                <cells>
+
+                    <!-- Name -->
+                    <Text text="{name}" />
+
+                    <!-- Designation -->
+                    <Text text="{designation}" />
+
+                    <!-- Formatter: Date -->
+                    <Text text="{path: 'dateOfJoining', formatter: '.formatter.formatDate'}"/>
+
+                    <!-- Expression Binding: Salary + Color -->
+                 <ObjectStatus
+    text="{= '₹ ' + ${currentSalary} / 100000 + ' LPA' }"
+    state="{= ${currentSalary} &gt; 900000 ? 'Success' : 'Warning' }"/>
+
+                    <!-- Base Location -->
+                    <Text text="{baseLocation}" />
+
+                    <!-- Expression Binding: Experience -->
+                  <Text text="{= ${dateOfJoining} &lt; '2019-01-01' ? 'Senior' : 'Junior' }"/>
+
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+    </content>
+    </Page>
+</mvc:View>
