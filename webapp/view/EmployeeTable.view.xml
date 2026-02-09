@@ -1,6 +1,6 @@
 <mvc:View controllerName="com.employeeinfo.controller.EmployeeTable"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m" xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
     <content>
      <Table
@@ -15,6 +15,8 @@
             <Column><Text text="Salary"/></Column>
             <Column><Text text="Location"/></Column>
             <Column><Text text="Experience Level"/></Column>
+            <Column><Text text="Revised Salary"/></Column>
+            
         </columns>
 
         <items>
@@ -29,6 +31,7 @@
 
                     <!-- Formatter: Date -->
                     <Text text="{path: 'dateOfJoining', formatter: '.formatter.formatDate'}"/>
+                    <!-- <Text text="{path: 'dateOfJoining'}"/> -->
 
                     <!-- Expression Binding: Salary + Color -->
                  <ObjectStatus
@@ -37,9 +40,13 @@
 
                     <!-- Base Location -->
                     <Text text="{baseLocation}" />
+                    
 
                     <!-- Expression Binding: Experience -->
                   <Text text="{= ${dateOfJoining} &lt; '2019-01-01' ? 'Senior' : 'Junior' }"/>
+                  <!-- <Text text="{path: 'currentSalary'}"/> -->
+
+                  <Text text="{path: 'currentSalary', formatter: '.formatter.calculateHike'}"/>
 
                 </cells>
             </ColumnListItem>
@@ -47,5 +54,15 @@
     </Table>
 
     </content>
+    <footer>
+        <Toolbar>
+            <ToolbarSpacer />
+
+            <Button
+                text="{= ${ui>/editMode} ? 'Save' : 'Edit' }"
+                type="{= ${ui>/editMode} ? 'Emphasized' : 'Default' }"
+                press=".onEditSavePress"/>
+        </Toolbar>
+    </footer>
     </Page>
 </mvc:View>

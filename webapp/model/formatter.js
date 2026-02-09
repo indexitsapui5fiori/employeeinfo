@@ -12,6 +12,22 @@ sap.ui.define([], function () {
                 month: "short",
                 day: "numeric"
             });
+        },
+        calculateHike:function(Salary){
+        //    if(!Salary)
+        //    {
+        //     return "";
+        //    }
+        //    let hikePercnt=0;
+        //    if(Salary<=700000)
+        //    {
+        //     hikePercnt=10
+        //    }
+        //    elseif(Salary<=1000000)
+        //    {
+        //    hikePercnt=8
+        //    }
+        //    return hikePercnt+"%"    
         }
     };
 });

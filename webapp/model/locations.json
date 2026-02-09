@@ -1,0 +1,9 @@
+{
+  "locations": [
+    { "key": "Bangalore", "text": "Bangalore" },
+    { "key": "Pune", "text": "Pune" },
+    { "key": "Mumbai", "text": "Mumbai" },
+    { "key": "Hyderabad", "text": "Hyderabad" },
+    { "key": "Chennai", "text": "Chennai" }
+  ]
+}
