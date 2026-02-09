@@ -5,7 +5,7 @@
       "name": "Amit Sharma",
       "dateOfJoining": "2018-06-15",
       "education": "B.Tech",
-      "currentSalary": 850000,
+      "currentSalary": null,
       "baseLocation": "Bangalore",
       "designation": "Senior Software Engineer"
     },

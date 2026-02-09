@@ -14,20 +14,19 @@ sap.ui.define([], function () {
             });
         },
         calculateHike:function(Salary){
-        //    if(!Salary)
-        //    {
-        //     return "";
-        //    }
-        //    let hikePercnt=0;
-        //    if(Salary<=700000)
-        //    {
-        //     hikePercnt=10
-        //    }
-        //    elseif(Salary<=1000000)
-        //    {
-        //    hikePercnt=8
-        //    }
-        //    return hikePercnt+"%"    
-        }
+            let hikeChange = 0;
+            if(!Salary || !Salary ==''){
+                if (Salary >=1100000)
+                    hikeChange = 2;
+                else if(Salary >=850000)
+                    hikeChange =  5; 
+                else if(Salary >=700000)
+                    hikeChange = 10;
+                else
+                    hikeChange = 12;
+            }
+            let rSalary = Salary+((Salary/100)*hikeChange);
+            return rSalary/100000 +" LPA";
+        } 
     };
 });
