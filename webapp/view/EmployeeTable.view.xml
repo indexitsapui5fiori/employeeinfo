@@ -49,7 +49,7 @@
 
                   <Text text="{path: 'currentSalary', formatter: '.formatter.calculateHike'}"/>
                     <!-- <Text text="{= ${dateOfJoining} &lt; '2018-01-01' ? 'Chennai' : ${baseLocation}}"/> -->
-                     <Text text="{= ${dateOfJoining} &lt; '2018-01-01' ? 'Chennai' : ' '  }"/>
+                     <Text text="{= ${dateOfJoining} &gt; '2018-01-01' ? 'Chennai' : ' '  }"/>
                 </cells>
             </ColumnListItem>
         </items>
