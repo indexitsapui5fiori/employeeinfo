@@ -15,8 +15,10 @@
             <Column><Text text="Salary"/></Column>
             <Column><Text text="Location"/></Column>
             <Column><Text text="Experience Level"/></Column>
+            <Column><Text text="Promotion"/></Column>
             <Column><Text text="Revised Salary"/></Column>
              <Column><Text text="Relocation"/></Column>
+             
             
         </columns>
 
@@ -45,11 +47,14 @@
 
                     <!-- Expression Binding: Experience -->
                   <Text text="{= ${dateOfJoining} &lt; '2019-01-01' ? 'Senior' : 'Junior' }"/>
+                  <Text text="{= ${dateOfJoining} &lt; '2019-01-01' ? 'Manager' : 'Senior' }"/>
                   <!-- <Text text="{path: 'currentSalary'}"/> -->
 
                   <Text text="{path: 'currentSalary', formatter: '.formatter.calculateHike'}"/>
                     <!-- <Text text="{= ${dateOfJoining} &lt; '2018-01-01' ? 'Chennai' : ${baseLocation}}"/> -->
                      <Text text="{= ${dateOfJoining} &gt; '2018-01-01' ? 'Chennai' : ' '  }"/>
+                     
+                    
                 </cells>
             </ColumnListItem>
         </items>
